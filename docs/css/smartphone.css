@@ -22,7 +22,7 @@ video {
     height: 50px;
     z-index: 100;
     background-color: #fff;
-    border: solid 3px #000;
+    border: solid 2px #000;
     margin: 10px;
     border-radius: 5px;
     transition: opacity .5s, visibility .5s;
