@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common-style.css">
     <link rel="stylesheet" href="css/smartphone.css">
-    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         // サイト全体フェードイン
@@ -43,6 +43,7 @@
                 <i></i>
                 <i></i>
         </div>
+
         <nav class="nav">
             <ul class="nav-menu-ul">
                 <li class="nav-menu-li"><a href="#top">TOP</a></li>
@@ -54,9 +55,11 @@
                 <li class="nav-menu-li"><a href="#faq">FAQ</a></li>
                 <li class="nav-menu-li"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="close-button">
-                <i></i>
-                <i></i>
+            <div class="close-button-container">
+                <div class="close-button">
+                    <i></i>
+                    <i></i>
+                </div>
             </div>
         </nav>
         <script type="text/javascript">
@@ -65,7 +68,7 @@
                 $('.nav').slideDown(1000);
                 $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
             });
-            $('.close-button').on('click', function () {
+            $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
                 setTimeout(function(){
                     $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
@@ -85,7 +88,7 @@
                     function action() {
                         $('html').fadeIn(2000);
                         location.href = linkUrl;
-                        $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
+                        $('.hamburger-button, .select-the-plan-button, .nav, .close-button-container').removeClass('show');
 
                     }
                     setTimeout(action,1000);

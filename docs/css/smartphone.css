@@ -8,11 +8,16 @@ div#top {
     justify-content: left;
     align-items: center;
     overflow: hidden;
+    z-index: -1;
 }
 
 video {
+    min-height: 100vh;
     width: auto;
-    height: 100%;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .hamburger-button {
@@ -20,12 +25,11 @@ video {
     position: fixed;
     width: 50px;
     height: 50px;
-    z-index: 100;
     background-color: #fff;
     border: solid 1.75px #000;
     margin: 10px;
     border-radius: 4px;
-    transition: opacity .5s, visibility .5s;
+    z-index: 500;
 
     display: flex;
     flex-direction: column;
@@ -73,12 +77,12 @@ video {
 .select-the-plan-button {
     font-size: 20px;
     font-family: 'EB Garamond', serif;
+    z-index: 500;
     
     display: block;
     position: fixed;
     width: 170px;
     height: 50px;
-    z-index: 100;
     background-color: #fff;
     border: solid 1.75px #000;
     margin: 10px;
@@ -104,34 +108,20 @@ video {
 }
 
 .nav {
-    position: fixed;
+    position: relative;
     width: 75%;
     height: 90%;
     padding: 1rem;
     opacity: 0;
     visibility: hidden;
     z-index: 200;
-    /* transition: opacity .5s, visibility .5s; */
 }
 .nav.show {
     position: fixed;
     opacity: 0.95;
     visibility: visible;
-    z-index: 200;
     overflow: scroll;
-    /* transition: opacity .5s, visibility .5s; */
     background-color: #fff;
-    /* animation: SlideIn 1.6s; */
-}
-@keyframes SlideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-64px);
-    }
-    100% {
-      opacity: 0.9;
-      transform: translateY(0);
-    }
 }
 .nav-menu-li {
     font-size: 28px;
@@ -148,27 +138,32 @@ video {
 .nav-menu-li a:hover {
     color: #666;
 }
-.close-button {
-    display: block;
+.close-button-container {
     position: absolute;
-    bottom: 0;
-    right: 10px;
     width: 50px;
     height: 50px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
     overflow: hidden;
 }
-.close-button:hover {
+.close-button-container:hover {
     opacity: 0.9;
     cursor: pointer;
 }
+
+.close-button {
+    display: block;
+    position: absolute;
+    top: calc(25px / 2);
+    left: 4.5px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
 .close-button i {
-    display: absolute;
     top: 0;
     left: 0;
     width: 25px;
