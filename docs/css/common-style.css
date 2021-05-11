@@ -82,8 +82,9 @@ li {
   font-feature-settings: "palt" 1;
   color: #6666FF;
   text-align: center;
-  width: 60%;
+  width: 80%;
   margin-bottom: 21px;
+  align-self: center;
   }
   .h2:before,
   .h2:after {
@@ -98,10 +99,24 @@ li {
   margin-left: 1rem;
   }
 
+.h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 28px;
+  font-feature-settings: "palt" 1;
+  color: #6666FF;
+  text-align: left;
+  margin-bottom: 21px;
+}
+
 .p1 {
   margin-bottom: 120px;
 }
 
 .p2 {
   margin-bottom: 50px;
+}
+
+.p3-voice {
+  font-size: 13px;
 }
