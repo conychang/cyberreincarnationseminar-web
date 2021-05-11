@@ -22,9 +22,9 @@ video {
     height: 50px;
     z-index: 100;
     background-color: #fff;
-    border: solid 1.5px #000;
+    border: solid 1.75px #000;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: opacity .5s, visibility .5s;
 
     display: flex;
@@ -70,6 +70,39 @@ video {
     opacity: 0;
 }
 
+.select-the-plan-button {
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    
+    display: block;
+    position: fixed;
+    width: 170px;
+    height: 50px;
+    z-index: 100;
+    background-color: #fff;
+    border: solid 1.75px #000;
+    margin: 10px;
+    border-radius: 4px;
+    transition: opacity .5s, visibility .5s;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.select-the-plan-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.select-the-plan-button.show {
+    opacity: 0;
+    z-index: -1;
+}
+
 .nav {
     position: fixed;
     width: 75%;
@@ -102,7 +135,11 @@ video {
 }
 .nav-menu-li {
     font-size: 28px;
+    line-height: 28px;
     margin-bottom: 25px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-feature-settings: "palt" 1;
 }
 .nav-menu-li a {
     color: #000;
@@ -169,8 +206,9 @@ div.plain-container {
     width: 100%;
     height: auto;
     background-color: aquamarine;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 120px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -181,8 +219,13 @@ div.plain-container {
 
 div.plain-wrapper {
     position: relative;
-    width: 90%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background-color: cornflowerblue;
-    margin-bottom: 10%;
+    margin: 0px 21px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
