@@ -125,7 +125,7 @@ video {
 }
 .nav-menu-li {
     font-size: 28px;
-    line-height: 28px;
+    /* line-height: 28px; */
     margin-bottom: 25px;
     font-family: 'Noto Serif JP', serif;
     font-weight: 700;
