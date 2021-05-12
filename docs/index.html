@@ -68,12 +68,12 @@
             $('.hamburger-button').on('click', function () {
 
                 $('.nav').slideDown(1000);
-                $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
+                $('.hamburger-button, .select-the-plan-button, .nav, body').toggleClass('show');
             });
             $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
                 setTimeout(function(){
-                    $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
+                    $('.hamburger-button, .select-the-plan-button, .nav, body').removeClass('show');
                 },1050);
             });
 
