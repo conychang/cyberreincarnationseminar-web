@@ -74,6 +74,16 @@ video {
     opacity: 0;
 }
 
+.select-the-plan-button-container {
+    opacity: 1;
+    transition: opacity .5s, visibility .5s;
+}
+.select-the-plan-button-container.show {
+    /* みえてないとき */
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+}
 .select-the-plan-button {
     font-size: 20px;
     font-family: 'EB Garamond', serif;
@@ -103,9 +113,14 @@ video {
     cursor: pointer;
 }
 .select-the-plan-button.show {
+    /* みえてないとき */
     opacity: 0;
     z-index: -1;
+    visibility: hidden;
 }
+/* .select-the-plan-button.hide {
+    display: none;
+} */
 
 .nav {
     position: fixed;
