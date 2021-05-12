@@ -31,7 +31,7 @@
     }
 }
 
-@media screen and (orientation:landscape) and (max-width: 900px) {
+/* @media screen and (orientation:landscape) and (max-width: 900px) {
     .nav-menu-ul {
         display: flexbox;
         list-style-type: none;
@@ -43,4 +43,5 @@
         margin-bottom: 10px;
     }
 
-}
+} */
+

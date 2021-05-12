@@ -125,6 +125,8 @@ video {
     background-color: #fff;
 }
 .nav-menu-div {
+    position: relative;
+    visibility: visible;
     width: auto;
     height: 100%;
     overflow-y: scroll;
@@ -261,29 +263,24 @@ div.plain-wrapper {
     object-fit: cover;
 }
 
-.parallax-bg {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    background-color: deeppink;
-}
 
-.img-bg-01 {
-    background-image: url('../images/lesson1.jpg');
-}
-
-.crs-test-container {
-    box-sizing: border-box;
+div.parallax-bg {
+    /* box-sizing: border-box;
+    color: #FFF; */
+    font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: 100%;
-    background-color: deeppink;
+    padding: 5%;
+
+    background-image: url('../images/dennou-test.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.tensei-p {
+    position: fixed;
 }
