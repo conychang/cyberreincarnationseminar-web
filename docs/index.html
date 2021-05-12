@@ -76,7 +76,7 @@
             $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
                 setTimeout(function(){
-                    $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
+                    $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
                 },1050);
             });
 
@@ -132,9 +132,9 @@
 
     <!-- Select the Plan ボタン -->
     <a href="#select-plan">
-        <div class="select-the-plan-button-container">
+        <!-- <div class="select-the-plan-button-container"> -->
             <div class="select-the-plan-button">Select the Plan</div>
-        </div>
+        <!-- </div> -->
     </a>
     <!-- Select the Plan ボタン ここまで -->
 
