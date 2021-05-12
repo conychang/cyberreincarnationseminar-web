@@ -64,13 +64,15 @@
                 </div>
             </div>
         </div>
+
         <script type="text/javascript">
             $('.nav').slideUp(1000);
+            // $('.select-the-plan-button').toggleClass('show');
             
             $('.hamburger-button').on('click', function () {
 
                 $('.nav').slideDown(1000);
-                $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
+                $('.hamburger-button, .select-the-plan-button, .nav').addClass('show');
             });
             $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
@@ -98,13 +100,42 @@
                     setTimeout(action,1000);
                 });
 
-                });
+            });
+            
+ 
+        // Select the Plan ボタンの消失スクリプト
+            $(function() {
+            
+            // 0. #select the planの位置情報を取得
+                var navLink = $('#select-plan').offset().top;
+
+            // 1. スクロールしたら現在地を取得
+            // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
+                function currentCheck() {
+                    var nowScroll = $(window).scrollTop();
+                    if(nowScroll >= navLink) {
+                        $('.select-the-plan-button-container').addClass('show');
+                    } else {
+                            $('.select-the-plan-button-container').removeClass('show');
+                            
+
+                    };
+                };
+
+            $(window).on('load scroll', function() {
+                currentCheck();
+            });
+    
+            });
+
         </script>
     <!-- ナビここまで -->
 
     <!-- Select the Plan ボタン -->
     <a href="#select-plan">
-        <div class="select-the-plan-button">Select the Plan</div>
+        <div class="select-the-plan-button-container">
+            <div class="select-the-plan-button">Select the Plan</div>
+        </div>
     </a>
     <!-- Select the Plan ボタン ここまで -->
 
@@ -213,8 +244,9 @@
     <!-- ご注文後のながれ -->
     <script type="text/javascript">
         $(function () {
-            $('.flow-parent').on('click', function () {
+            $('.flow-parent-container').on('click', function () {
             $(this).next().slideToggle();
+            $(this).toggleClass('open', 500);
             });
         });
     </script>
@@ -223,16 +255,91 @@
         <div class="plain-wrapper">
             <div class="h1">ご注文後のながれ</div>
 
-            <div class="flow-parent">プレミアム転生プラン</div>
+            <div class="flow-parent-container">
+                <div class="h-f">プレミアム転生プラン</div>
+            </div>
+
             <div class="flow-child-container">
                 <div class="h4">1. ご注文</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
                 <div class="h4">2. 住所お名前連絡先の記入</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
+            </div>
+
+            <div class="flow-parent-container">
+                <div class="h-f">パーフェクト転生プラン</div>
+            </div>
+
+            <div class="flow-child-container">
+                <div class="h4">1. ご注文</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
+                <div class="h4">2. 住所お名前連絡先の記入</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
             </div>
         </div>
     </div>
     <!-- ご注文後のながれ　ここまで -->
 
-    <div class="plain-container" id="select-plan"></div>
-    <div id="faq"></div>
-    <div id="contact"></div>
+    <!-- プランの選択 -->
+    <div class="plain-container" id="select-plan">
+        <div class="plain-wrapper">
+            <div class="h1">選べる2つのプラン</div>
+            <a href="#top"><img class="crs-image" src="./images/lesson1.jpg"></a>
+            <a href="#top"><img class="crs-image" src="./images/lesson1.jpg"></a>
+        </div>
+    </div>
+    <!-- プランの選択　ここまで -->
+
+
+    <!-- FAQ -->
+    <div id="faq">
+        <div class="plain-container" id="select-plan">
+            <div class="plain-wrapper">
+                <div class="h1">FAQ</div>
+
+                    <div class="flow-parent-container"><div class="h-f">プレミアム転生プラン</div></div>
+        
+                    <div class="flow-child-container">
+                        <p>
+                            情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+        とかくに人の世は住みにくい。
+                        </p>
+                    </div>
+
+                    <div class="flow-parent-container"><div class="h-f">パーフェクト転生プラン</div></div>
+        
+                    <div class="flow-child-container">
+                        <p>
+                            情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+        とかくに人の世は住みにくい。
+                        </p>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FAQ　ここまで -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="plain-container" id="select-plan" style="margin-bottom: 150%">
+            <div class="plain-wrapper">
+                <div class="h1">Contact</div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Conta　ここまで -->
 </body>
