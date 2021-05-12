@@ -114,18 +114,20 @@ video {
     padding: 1rem;
     opacity: 0;
     visibility: hidden;
-    z-index: 200;
+    z-index: 500;
+    /* pointer-events: all; */
+    /* overflow: scroll; */
+    overflow-y: scroll;
 }
 .nav.show {
     position: fixed;
     opacity: 0.95;
     visibility: visible;
-    overflow: scroll;
     background-color: #fff;
 }
 .nav-menu-li {
+    /* width: fit-content; */
     font-size: 28px;
-    /* line-height: 28px; */
     margin-bottom: 25px;
     font-family: 'Noto Serif JP', serif;
     font-weight: 700;
