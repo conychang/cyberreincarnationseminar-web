@@ -76,7 +76,7 @@
             $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
                 setTimeout(function(){
-                    $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
+                    $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
                 },1050);
             });
 
