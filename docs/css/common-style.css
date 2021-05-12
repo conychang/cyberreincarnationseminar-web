@@ -27,9 +27,6 @@ html {
 body {
   scrollbar-face-color: #000000;
 }
-body.show {
-  position: fixed;
-}
 ::-webkit-scrollbar {
   display:none;
 }
