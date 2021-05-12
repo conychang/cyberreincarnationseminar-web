@@ -213,8 +213,9 @@
     <!-- ご注文後のながれ -->
     <script type="text/javascript">
         $(function () {
-            $('.flow-parent').on('click', function () {
+            $('.flow-parent-container').on('click', function () {
             $(this).next().slideToggle();
+            $(this).toggleClass('open', 500);
             });
         });
     </script>
@@ -223,15 +224,47 @@
         <div class="plain-wrapper">
             <div class="h1">ご注文後のながれ</div>
 
-            <div class="flow-parent">プレミアム転生プラン</div>
+            <div class="flow-parent-container">
+                <div class="h-f">プレミアム転生プラン</div>
+            </div>
+
             <div class="flow-child-container">
                 <div class="h4">1. ご注文</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
                 <div class="h4">2. 住所お名前連絡先の記入</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
+            </div>
+
+            <div class="flow-parent-container">
+                <div class="close-button-flow">
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="h-f">パーフェクト転生プラン</div>
+            </div>
+
+            <div class="flow-child-container">
+                <div class="h4">1. ご注文</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
+                <div class="h4">2. 住所お名前連絡先の記入</div>
+                <p>
+                    情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人 
+とかくに人の世は住みにくい。
+                </p>
             </div>
         </div>
     </div>
     <!-- ご注文後のながれ　ここまで -->
-
+    
     <div class="plain-container" id="select-plan"></div>
     <div id="faq"></div>
     <div id="contact"></div>
