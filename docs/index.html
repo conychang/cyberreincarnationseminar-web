@@ -204,14 +204,34 @@
     </div>
     <!-- 転生者の声ここまで -->
 
+    <!-- 電脳転生診断リンク -->
     <a href="#top">
-    <div class="parallax-bg" id="crs-test">
-        <!-- <div class="tensei-p">こんにちは</p> -->
-    </div>
+        <div class="parallax-bg" id="crs-test"></div>
     </a>
+    <!-- 電脳転生診断リンク ここまで -->
 
+    <!-- ご注文後のながれ -->
+    <script type="text/javascript">
+        $(function () {
+            $('.flow-parent').on('click', function () {
+            $(this).next().slideToggle();
+            });
+        });
+    </script>
 
-    <div class="plain-container" id="flow"></div>
+    <div class="plain-container" id="flow">
+        <div class="plain-wrapper">
+            <div class="h1">ご注文後のながれ</div>
+
+            <div class="flow-parent">プレミアム転生プラン</div>
+            <div class="flow-child-container">
+                <div class="h4">1. ご注文</div>
+                <div class="h4">2. 住所お名前連絡先の記入</div>
+            </div>
+        </div>
+    </div>
+    <!-- ご注文後のながれ　ここまで -->
+
     <div class="plain-container" id="select-plan"></div>
     <div id="faq"></div>
     <div id="contact"></div>

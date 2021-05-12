@@ -281,6 +281,18 @@ div.parallax-bg {
     background-repeat: no-repeat;
 }
 
-.tensei-p {
-    position: fixed;
+div.flow-parent {
+    width: 100%;
+    height: auto;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-feature-settings: "palt" 1;
+}
+div.flow-parent:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.flow-child-container {
+    display: none;
 }
