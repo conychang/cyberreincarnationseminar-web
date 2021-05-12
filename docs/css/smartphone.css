@@ -117,7 +117,6 @@ video {
     z-index: 500;
     /* pointer-events: all; */
     /* overflow: scroll; */
-    overflow-y: auto;
 }
 .nav.show {
     position: fixed;
@@ -125,9 +124,19 @@ video {
     visibility: visible;
     background-color: #fff;
 }
+.nav-menu-div {
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: auto;
+    /* overflow-scrolling: auto; */
+    overflow-y: scroll;
+    /* background-color: blue; */
+}
 .nav-menu-li {
     /* width: fit-content; */
     font-size: 28px;
+    padding: 5px;
     margin-bottom: 25px;
     font-family: 'Noto Serif JP', serif;
     font-weight: 700;

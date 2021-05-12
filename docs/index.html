@@ -45,6 +45,7 @@
         </div>
 
         <div class="nav">
+            <div class="nav-menu-div">
             <ul class="nav-menu-ul">
                 <li class="nav-menu-li"><a href="#top">TOP</a></li>
                 <li class="nav-menu-li"><a href="#about">CRSとは？</a></li>
@@ -55,6 +56,7 @@
                 <li class="nav-menu-li"><a href="#faq">FAQ</a></li>
                 <li class="nav-menu-li"><a href="#contact">Contact</a></li>
             </ul>
+            </div>
             <div class="close-button-container">
                 <div class="close-button">
                     <i></i>
@@ -68,12 +70,12 @@
             $('.hamburger-button').on('click', function () {
 
                 $('.nav').slideDown(1000);
-                $('.hamburger-button, .select-the-plan-button, .nav, body').toggleClass('show');
+                $('.hamburger-button, .select-the-plan-button, .nav').toggleClass('show');
             });
             $('.close-button-container').on('click', function () {
                 $('.nav').slideUp(1000);
                 setTimeout(function(){
-                    $('.hamburger-button, .select-the-plan-button, .nav, body').removeClass('show');
+                    $('.hamburger-button, .select-the-plan-button, .nav').removeClass('show');
                 },1050);
             });
 
