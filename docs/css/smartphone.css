@@ -227,6 +227,7 @@ div.plain-container {
     justify-content: left;
     align-items: center;
     overflow: hidden;
+    z-index: 100;
 }
 
 div.plain-wrapper {
@@ -294,7 +295,6 @@ div.plain-wrapper {
     content:"";
     display:block;
     position:fixed;
-    /* position: relative; */
     top:0;
     left:0;
     z-index: -1;
@@ -302,18 +302,13 @@ div.plain-wrapper {
     height:100vh;
     background-repeat:no-repeat;
     background-position: center;
-    background-image:url(../images/dennou-test.png);
-    background-size:cover;
-    }
+    background-image: url(../images/start-button.png), url(../images/sky1.png);
+    background-size: 100%, cover;
+}
 
 div.flow-parent-container {
-    /* width: 100%;
-    height: auto; */
     display: block;
     position: relative;
-    /* display: flex;
-    flex-direction: row; */
-    /* align-content: flex-start; */
     margin-bottom: 24px;
     background-color: deepskyblue;
 }
