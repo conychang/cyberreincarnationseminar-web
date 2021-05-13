@@ -8,7 +8,7 @@ div#top {
     justify-content: left;
     align-items: center;
     overflow: hidden;
-    /* z-index: -1; */
+    z-index: -1;
 }
 
 video {
