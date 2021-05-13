@@ -103,10 +103,11 @@
             
  
         // Select the Plan ボタンの消失スクリプト
-            // $(function() {
+            $(function() {
             
             // 0. #select the planの位置情報を取得
-                var navLink = $('#select-plan').offset().top;
+                var navLink  = $('#select-plan').offset().top;
+                var navLinkA = $('#about').offset().top;
 
             // 1. スクロールしたら現在地を取得
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
@@ -117,13 +118,20 @@
                     } else {
                         $('.select-the-plan-button').css('display', 'flex');
                     };
+
+                    if(nowScroll >= navLinkA) {
+                        $('.parallax-bg::before').css('display', 'block'); // #about以降
+                    } else {
+                        $('.parallax-bg::before').css('display', 'none'); //#about以前
+                    };
                 };
 
-            // $(window).on('load scroll', function() {
-            //     currentCheck();
-            // });
+
+                $(window).on('load scroll', function() {
+                    currentCheck();
+                });
     
-            // });
+            });
 
         </script>
     <!-- ナビここまで -->
