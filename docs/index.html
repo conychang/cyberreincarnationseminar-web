@@ -46,17 +46,18 @@
 
         <div class="nav">
             <div class="nav-menu-div">
-            <ul class="nav-menu-ul">
-                <li class="nav-menu-li"><a href="#top" class="atop">TOP</a></li>
-                <li class="nav-menu-li"><a href="#about">CRSとは？</a></li>
-                <li class="nav-menu-li"><a href="#voice">転生者の声</a></li>
-                <li class="nav-menu-li"><a href="#crs-test">電脳転生診断</a></li>
-                <li class="nav-menu-li"><a href="#flow">ご注文後のながれ</a></li>
-                <li class="nav-menu-li"><a href="#select-plan">プランを選ぶ</a></li>
-                <li class="nav-menu-li"><a href="#faq">FAQ</a></li>
-                <li class="nav-menu-li"><a href="#contact">Contact</a></li>
-            </ul>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-li"><a href="#top" class="atop">TOP</a></li>
+                    <li class="nav-menu-li"><a href="#about">CRSとは？</a></li>
+                    <li class="nav-menu-li"><a href="#voice">転生者の声</a></li>
+                    <li class="nav-menu-li"><a href="#crs-test">電脳転生診断</a></li>
+                    <li class="nav-menu-li"><a href="#flow">ご注文後のながれ</a></li>
+                    <li class="nav-menu-li"><a href="#select-plan">プランを選ぶ</a></li>
+                    <li class="nav-menu-li"><a href="#faq">FAQ</a></li>
+                    <li class="nav-menu-li"><a href="#contact">Contact</a></li>
+                </ul>
             </div>
+
             <div class="close-button-container">
                 <div class="close-button">
                     <i></i>
@@ -103,7 +104,6 @@
                     $('.parallax-bg').css('opacity', 0);
                 });
 
-
             });
             
  
@@ -119,11 +119,11 @@
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
                 function currentCheck() {
                     var nowScroll = $(window).scrollTop();
-                    if(nowScroll >= navLink) {
-                        $('.select-the-plan-button').css('display', 'none');
-                    } else {
-                        $('.select-the-plan-button').css('display', 'flex');
-                    };
+                    // if(nowScroll >= navLink) {
+                    //     $('.select-the-plan-button').css('display', 'none');
+                    // } else {
+                    //     $('.select-the-plan-button').css('display', 'flex');
+                    // };
 
                     if(nowScroll >= navLinkA) {
                         $('.parallax-bg').css('opacity', 1); // #voice以降
@@ -352,7 +352,7 @@
         <div class="plain-container" style="padding-bottom: 150%">
             <div class="plain-wrapper">
                 <div class="h1">Contact</div>
-                <p>更新メモ：　おなかすいた</p>
+                <p>更新メモ：　おなかすいたねぇ。</p>
             </div>
         </div>
     </div>
