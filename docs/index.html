@@ -112,6 +112,7 @@
             // 1. スクロールしたら現在地を取得
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
                 function currentCheck() {
+                    var navLink  = $('#select-plan').offset().top + 1;
                     var nowScroll = $(window).scrollTop();
                     if(nowScroll >= navLink) {
                         $('.select-the-plan-button').css('display', 'none');
@@ -312,7 +313,7 @@
 
     <!-- FAQ -->
     <div id="faq">
-        <div class="plain-container" id="select-plan">
+        <div class="plain-container">
             <div class="plain-wrapper">
                 <div class="h1">FAQ</div>
 
@@ -341,7 +342,7 @@
 
     <!-- Contact -->
     <div id="contact">
-        <div class="plain-container" id="select-plan" style="padding-bottom: 150%">
+        <div class="plain-container" style="padding-bottom: 150%">
             <div class="plain-wrapper">
                 <div class="h1">Contact</div>
                 
