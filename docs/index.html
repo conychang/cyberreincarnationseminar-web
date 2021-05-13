@@ -107,12 +107,13 @@
             
             // 0. #select the planの位置情報を取得
                 var navLink  = $('#select-plan').offset().top;
+                $('.select-the-plan-button').css('display', 'flex');
                 var navLinkA = $('#about').offset().top;
 
             // 1. スクロールしたら現在地を取得
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
                 function currentCheck() {
-                    var navLink  = $('#select-plan').offset().top - 1;
+                    // var navLink  = $('#select-plan').offset().top - 1;
                     var nowScroll = $(window).scrollTop();
                     if(nowScroll >= navLink) {
                         $('.select-the-plan-button').css('display', 'none');
@@ -121,9 +122,9 @@
                     };
 
                     if(nowScroll >= navLinkA) {
-                        $('.parallax-bg').css('display', 'block'); // #about以降
+                        $('.parallax-bg').css('opacity', 1); // #about以降
                     } else {
-                        $('.parallax-bg').css('display', 'none'); //#about以前
+                        $('.parallax-bg').css('opacity', 0); //#about以前
                     };
                 };
 
@@ -243,9 +244,11 @@
 
     <!-- 電脳転生診断リンク -->
     <a href="#top">
+        <div id="crs-test">
         <!-- <div class="parallax-container"> -->
-            <div class="parallax-bg" id="crs-test"></div>
+            <div class="parallax-bg"></div>
         <!-- </div> -->
+        </div>
     </a>
     <!-- 電脳転生診断リンク ここまで -->
 
