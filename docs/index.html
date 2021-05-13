@@ -108,12 +108,20 @@
             
  
         // Select the Plan ボタンの消失スクリプト
-            $(function() {
-            
-            // 0. #select the planの位置情報を取得
+            $(window).on('load', function() {
                 var navLink  = $('#select-plan').offset().top;
                 var navLinkA = $('#voice').offset().top;
                 var navLinkB = $('#contact').offset().top;
+
+                // $(window).on('load scroll', function() {
+                // //実行処理
+                // var navLink  = $('#select-plan').offset().top;
+                // var navLinkA = $('#voice').offset().top;
+                // var navLinkB = $('#contact').offset().top;
+                // });
+
+            // 0. #select the planの位置情報を取得
+
 
                 $('.select-the-plan-button').css('display', 'flex');
 
