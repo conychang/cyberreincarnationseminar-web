@@ -113,6 +113,8 @@
             // 0. #select the planの位置情報を取得
                 var navLink  = $('#select-plan').offset().top;
                 var navLinkA = $('#voice').offset().top;
+                var navLinkB = $('#contact').offset().top;
+
                 $('.select-the-plan-button').css('display', 'flex');
 
             // 1. スクロールしたら現在地を取得
@@ -127,7 +129,10 @@
 
                     if(nowScroll >= navLinkA) {
                         $('.parallax-bg').css('opacity', 1); // #voice以降
-                    } else {
+                    } else if(nowScroll >= navLinkB) {
+                        $('.parallax-bg').css('opacity', 0); // #contact以降
+                    }
+                      else {
                         $('.parallax-bg').css('opacity', 0); //#voice以前
                     };
                 };
