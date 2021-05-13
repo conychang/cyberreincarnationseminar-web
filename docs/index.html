@@ -47,7 +47,7 @@
         <div class="nav">
             <div class="nav-menu-div">
             <ul class="nav-menu-ul">
-                <li class="nav-menu-li"><a href="#top">TOP</a></li>
+                <li class="nav-menu-li"><a href="#top" class="atop">TOP</a></li>
                 <li class="nav-menu-li"><a href="#about">CRSとは？</a></li>
                 <li class="nav-menu-li"><a href="#voice">転生者の声</a></li>
                 <li class="nav-menu-li"><a href="#crs-test">電脳転生診断</a></li>
@@ -99,6 +99,11 @@
                     setTimeout(action,1000);
                 });
 
+                $('atop').on('click',function(event){
+                    $('.parallax-bg').css('opacity', 0);
+                });
+
+
             });
             
  
@@ -107,8 +112,8 @@
             
             // 0. #select the planの位置情報を取得
                 var navLink  = $('#select-plan').offset().top;
+                var navLinkA = $('#voice').offset().top;
                 $('.select-the-plan-button').css('display', 'flex');
-                var navLinkA = $('#about').offset().top;
 
             // 1. スクロールしたら現在地を取得
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
@@ -122,9 +127,9 @@
                     };
 
                     if(nowScroll >= navLinkA) {
-                        $('.parallax-bg').css('opacity', 1); // #about以降
+                        $('.parallax-bg').css('opacity', 1); // #voice以降
                     } else {
-                        $('.parallax-bg').css('opacity', 0); //#about以前
+                        $('.parallax-bg').css('opacity', 0); //#voice以前
                     };
                 };
 
