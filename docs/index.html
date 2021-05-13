@@ -113,7 +113,7 @@
             // 0. #select the planの位置情報を取得
                 var navLink  = $('#select-plan').offset().top;
                 var navLinkA = $('#voice').offset().top;
-                var navLinkB = $('#contact').offset().top;
+                var navLinkB = $('#faq').offset().top;
 
                 $('.select-the-plan-button').css('display', 'flex');
 
@@ -121,19 +121,23 @@
             // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
                 function currentCheck() {
                     var nowScroll = $(window).scrollTop();
-                    // if(nowScroll >= navLink) {
-                    //     $('.select-the-plan-button').css('display', 'none');
-                    // } else {
-                    //     $('.select-the-plan-button').css('display', 'flex');
-                    // };
+                    if(navLink >=nowScroll) {
+                        $('.select-the-plan-button').css('display', 'flex');
+                        console.log("Select the Plan以前です。");
+                    } else {
+                        $('.select-the-plan-button').css('display', 'none');
+                        console.log("Select the Plan以降です。");
+                    };
 
-                    if(nowScroll >= navLinkA) {
-                        $('.parallax-bg').css('opacity', 1); // #voice以降
+                    if(navLinkA >= nowScroll) {
+                        $('.parallax-bg').css('opacity', 0); //#voice以前
+                        console.log("Voice以前です。");
                     } else if(nowScroll >= navLinkB) {
                         $('.parallax-bg').css('opacity', 0); // #contact以降
-                    }
-                      else {
-                        $('.parallax-bg').css('opacity', 0); //#voice以前
+                        console.log("FAQにさしかかりました");
+                    } else {
+                        $('.parallax-bg').css('opacity', 1); // #voice以降
+                        console.log("Voice以降です。");
                     };
                 };
 
@@ -357,7 +361,8 @@
         <div class="plain-container" style="padding-bottom: 150%">
             <div class="plain-wrapper">
                 <div class="h1">Contact</div>
-                <p>更新メモ：　おなかすいたねぇ。</p>
+                <p>更新メモ：　おなかすいたねぇ。って〜
+                </p>
             </div>
         </div>
     </div>
