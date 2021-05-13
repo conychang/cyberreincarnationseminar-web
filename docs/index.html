@@ -222,6 +222,9 @@
     </div>
     <!-- ご注文後のながれ　ここまで -->
 
+    <!-- ボタン消失点タグ -->
+    <div id="vanish" style="padding-bottom: 5px; background-color: aquamarine;"></div>
+
     <!-- プランの選択 -->
     <div class="plain-container" id="select-plan">
         <div class="plain-wrapper">
@@ -308,18 +311,13 @@
                 setTimeout(action,1000);
             });
 
-            $('atop').on('click',function(event){
-                $('.parallax-bg').css('opacity', 0);
-            });
-
         });
         
 
     // Select the Plan ボタンの消失スクリプト
-        $(
-           window).on('load scroll', 
+        $(window).on('load scroll', 
            function() {
-            var navLink  = $('#select-plan').offset().top - 50;
+            var navLink  = $('#vanish').offset().top;
             var navLinkA = $('#voice').offset().top;
             var navLinkB = $('#contact').offset().top;
 
@@ -338,7 +336,7 @@
         // 1. スクロールしたら現在地を取得
         // 2. 現在地が#select the planの位置情報よりも大きければselect the planボタンを消す
             function currentCheck() {
-                var navLink  = $('#select-plan').offset().top;
+                var navLink  = $('#vanish').offset().top;
                 var navLinkA = $('#voice').offset().top;
                 var navLinkB = $('#contact').offset().top;
 
