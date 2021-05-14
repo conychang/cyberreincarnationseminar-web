@@ -9,7 +9,6 @@ div#top {
     align-items: center;
     overflow: hidden;
     z-index: 100;
-    /* z-index: -1; */
 }
 
 video {
@@ -217,7 +216,7 @@ div.plain-container {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: aquamarine;
+    background-color: #fff;
     padding-top: 120px;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -232,7 +231,7 @@ div.plain-container {
 
 div.plain-wrapper {
     position: relative;
-    background-color: cornflowerblue;
+    background-color: #fff;
     width: 88%;
     /* margin: 0px 21px; */
 
@@ -247,12 +246,13 @@ div.plain-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    background-color: deeppink;
   }
 
 .voice {
     width: 50%;
     height: auto;
-    background-color: crimson;
+    background-color: blue;
     /* align-self: flex-end; */
 }
 .v-img {
@@ -260,7 +260,7 @@ div.plain-wrapper {
     width: 50%;
     height: auto;
     padding: 0 21px;
-    background-color: darkcyan;
+    background-color: salmon;
     overflow: hidden;
 }
 .v-img img {
@@ -294,7 +294,7 @@ div.flow-parent-container {
     display: block;
     position: relative;
     margin-bottom: 24px;
-    background-color: deepskyblue;
+    background-color: #fff;
 }
 div.flow-parent-container:hover {
     opacity: 0.9;
@@ -319,7 +319,7 @@ div.flow-parent-container:hover {
     border-radius: 2px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
-    /* background-color: deeppink; */
+    background-color: #fff;
   }
 .flow-parent-container.open:after {
     -webkit-transform: rotate(-45deg);
@@ -339,7 +339,7 @@ div.flow-parent-container:hover {
 
 .arrow-container {
     height: 57px;
-    background-color: coral;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +354,7 @@ div.flow-parent-container:hover {
 
 .border-container {
     height: 40px;
-    background-color: deeppink;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,3 +365,16 @@ div.flow-parent-container:hover {
     border-top: 1.75px solid #CCC;
 }
 
+.iframe-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+#video iframe{
+    position: fixed;
+    z-index: -1;
+    /* top:50%; */
+    /* left: 50%; */
+}

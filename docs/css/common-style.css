@@ -25,7 +25,7 @@ html {
 
 
 body {
-  scrollbar-face-color: #000000;
+  scrollbar-face-color: #000;
 }
 ::-webkit-scrollbar {
   display:none;
@@ -48,6 +48,9 @@ img {
   height:auto;
   max-width:100%;
   max-height:100%;
+  pointer-events: none;
+  -webkit-touch-callout:none;
+  user-select:none;
 }
 
 .crs-image {
@@ -129,5 +132,6 @@ li {
 }
 
 .p4 {
+  margin-top: 0;
   margin-bottom: 0;
 }
