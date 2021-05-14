@@ -41,6 +41,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   font-feature-settings: "palt" 1;
+  margin-top: 0;
 }
 
 img {
@@ -107,6 +108,8 @@ li {
   color: #6666FF;
   text-align: left;
   margin-bottom: 21px;
+  margin-left: 6%;
+  margin-right: 0;
 }
 
 .h4 {
