@@ -343,10 +343,10 @@
                 var nowScroll = $(window).scrollTop();
                 if(navLink >=nowScroll) {
                     $('.select-the-plan-button').css('display', 'flex');
-                    console.log("Select the Plan以前です。");
+                    // console.log("Select the Plan以前です。");
                 } else {
                     $('.select-the-plan-button').css('display', 'none');
-                    console.log("Select the Plan以降です。");
+                    // console.log("Select the Plan以降です。");
                 };
 
                 if(navLinkA >= nowScroll) {
@@ -359,11 +359,14 @@
                     $('.parallax-bg, .start-button').css('opacity', 1); // #voice以降
                     console.log("Voice以降です。");
                 };
+
+                return false;
             };
 
 
             $(function() {
                 currentCheck();
+                return false;
             });
 
         });
