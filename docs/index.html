@@ -276,7 +276,7 @@
         <div class="plain-container" style="padding-bottom: 150%">
             <div class="plain-wrapper">
                 <div class="h1">Contact</div>
-                <p>更新メモ：　低気圧がやばい。
+                <p>更新メモ：　バグ取りできた！
                 </p>
             </div>
         </div>
@@ -350,13 +350,13 @@
 
                 if(navLinkA >= nowScroll) {
                     $('.parallax-bg').css('opacity', 0); //#voice以前
-                    console.log("Voice以前です。");
+                    // console.log("Voice以前です。");
                 } else if(nowScroll >= navLinkB) {
                     $('.parallax-bg').css('opacity', 0); // #contact以降
-                    console.log("Contactにさしかかりました");
+                    // console.log("Contactにさしかかりました");
                 } else {
                     $('.parallax-bg').css('opacity', 1); // #voice以降
-                    console.log("Voice以降です。");
+                    // console.log("Voice以降です。");
                 };
 
                 // return false;
