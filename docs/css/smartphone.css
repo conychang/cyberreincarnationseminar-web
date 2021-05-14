@@ -357,7 +357,8 @@ div.flow-parent-container:hover {
     transition: all 0.2s ease-in-out;
     display: block;
     left: 8px;
-    bottom: 8px;
+    top: 1px;
+    /* bottom: 8px; */
     width: 18px;
     height: 18px;
     border-top: solid 4px #000;
@@ -365,12 +366,12 @@ div.flow-parent-container:hover {
     border-radius: 2px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
-    background-color: #fff;
   }
 .flow-parent-container.open:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    bottom: -3px;
+    top: 6px;
+    /* bottom: -3px; */
 }
 .h-f {
     margin-left: 40px;
@@ -409,20 +410,6 @@ div.flow-parent-container:hover {
     width: 100%;
     height: auto;
     border-top: 1.75px solid #CCC;
-}
-
-.iframe-wrapper {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    overflow: hidden;
-    /* z-index: -1; */
-}
-#video iframe{
-    position: fixed;
-    z-index: -1;
-    /* top:50%; */
-    /* left: 50%; */
 }
 
 .p-footer {
