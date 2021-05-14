@@ -7,8 +7,10 @@
     overflow: hidden;
 
     animation-name:PageAnimeAppear;
-	animation-duration:.10s;
-	animation-fill-mode:forwards;
+    animation-duration:.10s;
+    animation-fill-mode:forwards;
+
+    background: #fff;
 }
 
 #youtube {
