@@ -315,7 +315,7 @@
         
 
     // Select the Plan ボタンの消失スクリプト
-        $(window).on('load scroll', 
+        $(window).on('load scroll touchmove', 
            function() {
             var navLink  = $('#vanish').offset().top;
             var navLinkA = $('#voice').offset().top;
@@ -363,11 +363,11 @@
                 // return false;
             };
 
-            if('ontouchstart' in window) {
-            $win.bind('touchmove', function () {
-                currentCheck();
-            });
-            }
+            // if('ontouchstart' in window) {
+            // $win.bind('touchmove', function () {
+            //     currentCheck();
+            // });
+            // }
 
             $(function() {
                 currentCheck();
