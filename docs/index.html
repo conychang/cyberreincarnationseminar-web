@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/common-style.css">
     <link rel="stylesheet" href="css/smartphone.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/yt-test.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         // サイト全体フェードイン
         setTimeout (function () {
-            $("body").hide().delay(500).fadeIn(3000);
+            $("body").hide().delay(500).fadeIn(8500);
         }, 000);    
     </script>
 
@@ -64,9 +65,7 @@
                     <i></i>
                 </div>
             </div>
-        </div>
-
-        
+        </div>   
     <!-- ナビここまで -->
 
     <!-- Select the Plan ボタン -->
@@ -76,8 +75,14 @@
 
     <!-- TOP -->
     <div id="top">
-        <video autoplay muted loop playsinline preload="auto" control controlsList="nodownload" oncontextmenu="return false;" src="./images/Crs-Online-Shopping-Op-1-2.mp4"></video>
-        <div class="dot-layer"></div>
+        <!-- <video autoplay muted loop playsinline preload="auto" control controlsList="nodownload" oncontextmenu="return false;" src="./images/Crs-Online-Shopping-Op-1-2.mp4"></video> -->
+        <!-- <div class="dot-layer"></div> -->
+
+        <div id="youtube-area">
+            <div id="youtube"></div><!--youtube表示エリア-->
+            <div id="youtube-mask"></div>youtubeマスクエリア
+        </div>
+
         <div class="image-container">
             <img src="./images/logo.png"></img>
         </div>
@@ -389,6 +394,7 @@
     <!-- footer ここまで -->
 
     <!-- Scriptここから -->
+    <script type="text/javascript" src="./scripts/yt-test.js"></script>
     <script type="text/javascript" src="./scripts/nav.js"></script>
 
 </body>
