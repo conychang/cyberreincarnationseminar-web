@@ -19,6 +19,12 @@
         }, 000);    
     </script>
 
+    <!-- iNoBounce -->
+    <script type="text/javascript" src="./scripts/inobounce.min.js"></script>
+    <script type="text/javascript">
+        iNoBounce.enable();
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">    
@@ -315,18 +321,11 @@
         
 
     // Select the Plan ボタンの消失スクリプト
-        $(window).on('load touchmove', 
+        $(window).on('load scroll', 
            function() {
             var navLink  = $('#vanish').offset().top;
             var navLinkA = $('#voice').offset().top;
             var navLinkB = $('#contact').offset().top;
-
-            // $(window).on('load scroll', function() {
-            // //実行処理
-            // var navLink  = $('#select-plan').offset().top;
-            // var navLinkA = $('#voice').offset().top;
-            // var navLinkB = $('#contact').offset().top;
-            // });
 
         // 0. #select the planの位置情報を取得
 
@@ -363,20 +362,12 @@
                 // return false;
             };
 
-            // if('ontouchstart' in window) {
-            // $win.bind('touchmove', function () {
-            //     currentCheck();
-            // });
-            // }
 
             $(function() {
                 currentCheck();
                 // return false;
             });
 
-            window.addEventListener('touchmove', function(event) {
-                    console.log("発火!");
-            });
 
         });
 
