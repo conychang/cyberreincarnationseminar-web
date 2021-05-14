@@ -269,22 +269,6 @@ div.plain-wrapper {
     object-fit: cover;
 }
 
-
-/* div.parallax-bg {
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 5%;
-
-    background-image: url('../images/dennou-test.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 .parallax-bg {
     opacity: 0;
     width: 100%;
@@ -321,21 +305,6 @@ div.flow-parent-container:hover {
     width: 40px;
     height: 26px;
 }
-/* .close-button-flow i {
-    bottom: 13px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    height: 4px;
-    background-color: #000;
-    border-radius: 5px;
-}
-.close-button-flow i:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
-}
-.close-button-flow i:nth-child(2) {
-    transform: translateX(12px) translateY(5px) rotate(-45deg);
-} */
 .flow-parent-container:after {
     content: "";
     position: absolute;
@@ -367,3 +336,32 @@ div.flow-parent-container:hover {
 .flow-child-container {
     display: none;
 }
+
+.arrow-container {
+    height: 57px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #CCC;
+}
+
+.border-container {
+    height: 40px;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border {
+    width: 100%;
+    height: auto;
+    border-top: 1.75px solid #CCC;
+}
+
