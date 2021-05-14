@@ -355,18 +355,21 @@
                 } else if(nowScroll >= navLinkB) {
                     $('.parallax-bg, .start-button').css('opacity', 0); // #contact以降
                     console.log("Contactにさしかかりました");
-                } else {
+                } else if(nowScroll >= navLinkA) {
                     $('.parallax-bg, .start-button').css('opacity', 1); // #voice以降
                     console.log("Voice以降です。");
+                } else if(navLink >= nowScroll) {
+                    $('.parallax-bg, .start-button').css('opacity', 0);
+                    console.log("Vanish以前です。");
                 };
 
-                return false;
+                // return false;
             };
 
 
             $(function() {
                 currentCheck();
-                return false;
+                // return false;
             });
 
         });
