@@ -1,10 +1,11 @@
 $('.nav').slideUp(1000);
 
 $('.hamburger-button').on('click', function () {
-
+    console.log("Clicked");
     $('.nav').slideDown(1000);
     $('.hamburger-button, .select-the-plan-button, .nav').addClass('show');
 });
+
 $('.close-button-container').on('click', function () {
     $('.nav').slideUp(1000);
     setTimeout(function(){
