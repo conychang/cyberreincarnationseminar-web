@@ -320,13 +320,14 @@ div.plain-wrapper-100 {
     opacity: 0;
     width: 100%;
     height: 100vh;
+    z-index: -1;
 }
-
 .parallax-bg::before {
     content:"";
+    text-align: center;
     display:block;
     position:fixed;
-    top:0;
+    top: 0;
     left:0;
     z-index: -1;
     width:100%;
@@ -335,6 +336,38 @@ div.plain-wrapper-100 {
     background-position: center;
     background-image: url(../images/start-button.png), url(../images/sky1.png);
     background-size: 100%, cover;
+}
+
+.parallax-bg-2 {
+    opacity: 0;
+    width: 100%;
+    height: 10vh;
+}
+.parallax-bg-2::before {
+    content:"ボタンを押すと診断がスタートします。";
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    font-feature-settings: "palt" 1;
+
+    text-align: center;
+    display:block;
+    position:fixed;
+    bottom: 15%;
+    left:0;
+    width:100%;
+
+    animation: flash 2s linear infinite;
+}
+@keyframes flash {
+    0%,100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
 }
 
 div.flow-parent-container {
@@ -352,7 +385,7 @@ div.flow-parent-container:hover {
     width: 40px;
     height: 26px;
 }
-.flow-parent-container:after {
+.flow-parent-container::after {
     content: "";
     position: absolute;
     transition: all 0.2s ease-in-out;
@@ -368,7 +401,7 @@ div.flow-parent-container:hover {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-.flow-parent-container.open:after {
+.flow-parent-container.open::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 6px;
@@ -423,4 +456,4 @@ div.flow-parent-container:hover {
 
     margin: 10px 0;
     align-self: center;
-  }
+}

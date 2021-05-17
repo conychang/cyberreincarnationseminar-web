@@ -64,13 +64,13 @@ $(window).on('load scroll',
         };
 
         if(navLinkA >= nowScroll) {
-            $('.parallax-bg').css('opacity', 0); //#voice以前
+            $('.parallax-bg, .parallax-bg-2').css('opacity', 0); //#voice以前
             // console.log("Voice以前です。");
         } else if(nowScroll >= navLinkB) {
-            $('.parallax-bg').css('opacity', 0); // #contact以降
+            $('.parallax-bg, .parallax-bg-2').css('opacity', 0); // #contact以降
             // console.log("Contactにさしかかりました");
         } else {
-            $('.parallax-bg').css('opacity', 1); // #voice以降
+            $('.parallax-bg, .parallax-bg-2').css('opacity', 1); // #voice以降
             // console.log("Voice以降です。");
         };
 
