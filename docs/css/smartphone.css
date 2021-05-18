@@ -488,19 +488,10 @@ div.flow-parent-container:hover {
     transform: translateX(15px) translateY(10px) rotate(45deg);
 }
 
-.input-container {
-    width: 65%;
-    height: 20%;
-    background: crimson;
-    display: -webkit-inline-flex; /* Safari */
-    display: inline-flex;
-    -webkit-justify-content: space-between; /* Safari */
-    justify-content:         space-between;
-    z-index: 2;
-}
+
 .input-line {
     position: absolute;
-    background: cornflowerblue;
+    /* background: cornflowerblue; */
     width: 65%;
     display: flex;
     justify-content: center;
@@ -513,8 +504,37 @@ div.flow-parent-container:hover {
     border-top: 3px solid #CCC;
 }
 
-input[type="radio"]:checked {
-    background-color: #999;
-    width: 30px;
-    height: 30px;
+.input-container {
+    width: 65%;
+    height: 20%;
+    background: crimson;
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+    z-index: 2;
+
+    align-items: align-self;
+    align-items: center;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type=radio]:checked + .crs-test:before {
+    opacity: 1;
+}
+
+.crs-test {
+    position: relative; /* ボックスの位置を指定する */
+    padding: 0;
+    /* background-color: aqua; */
+}
+.crs-test:after {
+    content: ''; /* ボックスのコンテンツ */
+    display: block; /* ブロックレベル要素化する */
+    width: 10px; /* ボックスの横幅を指定する */
+    height: 10px; /* ボックスの高さを指定する */
+    border: 2px solid #ccc; /* ボックスの境界線を実線で指定する */
+    border-radius: 50%; /* ボックスの角丸を指定する */
+    background-color: #ccc;
 }
