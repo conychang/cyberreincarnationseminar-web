@@ -248,6 +248,8 @@ div.plain-wrapper {
     flex-direction: column;
     align-items: align-self;
     justify-content: unset;
+    padding: 0;
+    margin: 0;
 }
 
 div.plain-wrapper-100 {
@@ -456,4 +458,63 @@ div.flow-parent-container:hover {
 
     margin: 10px 0;
     align-self: center;
+}
+
+
+/* 診断 */
+.next-button {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transform: rotate(90deg);
+
+    animation: flash 2s linear infinite;
+}
+.next-button i {
+    width: 25px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 5px;
+}
+.next-button i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+.next-button i:nth-child(2) {
+    transform: translateX(15px) translateY(10px) rotate(45deg);
+}
+
+.input-container {
+    width: 65%;
+    height: 20%;
+    background: crimson;
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+    z-index: 2;
+}
+.input-line {
+    position: absolute;
+    background: cornflowerblue;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.input-line-inner {
+    width: 98%;
+    height: auto;
+    border-top: 3px solid #CCC;
+}
+
+input[type="radio"]:checked {
+    background-color: #999;
+    width: 30px;
+    height: 30px;
 }

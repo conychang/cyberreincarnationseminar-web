@@ -43,6 +43,9 @@ p {
   font-feature-settings: "palt" 1;
   margin-top: 0;
 }
+p:first-line {
+  line-height: 1;
+}
 
 img {
   width:auto;
@@ -135,6 +138,14 @@ li {
 }
 
 .p4 {
-  margin-top: 0;
   margin-bottom: 0;
+}
+
+.q {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-feature-settings: "palt" 1;
+  line-height: 30px;
+  background: cyan;
+  margin-bottom: 50px;
 }
