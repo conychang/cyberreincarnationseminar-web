@@ -54,9 +54,9 @@ p {
   font-feature-settings: "palt" 1;
   margin-top: 0;
 }
-p:first-line {
+/* p:first-line {
   line-height: 1;
-}
+} */
 
 img {
   width:auto;
