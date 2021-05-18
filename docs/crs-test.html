@@ -51,7 +51,7 @@
                 <li class="nav-menu-li"><a href="./index.html" class="atop">TOP</a></li>
                 <li class="nav-menu-li"><a href="./index.html#about">CRSとは？</a></li>
                 <li class="nav-menu-li"><a href="./index.html#voice">転生者の声</a></li>
-                <li class="nav-menu-li"><a href="./crs-test.html#testtop">電脳転生診断</a></li>
+                <li class="nav-menu-li"><a href="./crs-test.html">電脳転生診断</a></li>
                 <li class="nav-menu-li"><a href="./index.html#flow">ご注文後のながれ</a></li>
                 <li class="nav-menu-li"><a href="./index.html#select-plan">プランを選ぶ</a></li>
                 <li class="nav-menu-li"><a href="./index.html#faq">FAQ</a></li>
@@ -69,59 +69,179 @@
     <!-- ナビここまで -->
 
     <!-- Select the Plan ボタン -->
-    <div class="select-the-plan-button"><a href="#select-plan">Select the Plan</a></div>
+    <div class="select-the-plan-button"><a href="./index.html#select-plan">Select the Plan</a></div>
     <!-- Select the Plan ボタン ここまで -->
 
-    <div id="#testtop"></div>
+    <div class="q2-mask"></div>
 
-    <div class="plain-container" style="padding-top: 220px;">
-        <div class="plain-wrapper">
-            <p class="q">
-            Q1<br/>
-            最近、何をするのもおっくうだ
-            </p>
-        </div>
+    <div id="#testtop">
+        <div class="plain-container" style="padding-top: 220px;">
+            <div class="plain-wrapper">
+                <p class="q">
+                Q1<br/>
+                最近、何をするのもおっくうだ
+                </p>
+            </div>
 
-        
-        <div class="input-container">
-            <div class="input-line"><div class="input-line-inner"></div></div>
-
-            <label for="input1" class="crs-test"></label>
-            <input  id="input1" name="radio" type="radio" />
             
-            <label for="input2" class="crs-test"></label>
-            <input  id="input2" name="radio" type="radio" />
-
-            <label for="input3" class="crs-test-2"></label>
-            <input  id="input3" name="radio" type="radio" checked="checked" />
-
-            <label for="input4" class="crs-test"></label>
-            <input  id="input4" name="radio" type="radio" />
-
-            <label for="input5" class="crs-test"></label>
-            <input  id="input5" name="radio" type="radio" />
-            <!-- <img src="./images/slider.svg"> -->
-            <!-- <input type='range' min='1' max='5' step='1' value="3" list="tickmarks"> -->
-            <!-- <span id="slider"></span> -->
+            <div class="input-container">
+                <div class="input-line"><div class="input-line-inner"></div></div>
+                <input type="radio" name="radio" id="input1"><label for="input1" class="crs-test"></label>
+                <input type="radio" name="radio" id="input2"><label for="input2" class="crs-test"></label>
+                <input type="radio" name="radio" id="input3" checked="checked"><label for="input3" class="crs-test"></label>
+                <input type="radio" name="radio" id="input4"><label for="input4" class="crs-test"></label>
+                <input type="radio" name="radio" id="input5"><label for="input5" class="crs-test"></label>
+            </div>
+            <div class="input-container">
+                <p class="input-caption">YES</p>
+                <p class="input-caption">NO</p>
+            </div>
         </div>
-        <!-- <datalist id="tickmarks">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-        </datalist> -->
 
-
-
-
+        <div class="next-button" id="q1">
+            <i></i>
+            <i></i>
+        </div>
     </div>
 
-    <div class="next-button">
-        <i></i>
-        <i></i>
+    <!-- Q2 -->
+    <div class="q2">
+        <div class="plain-container" style="padding-top: 220px;">
+            <div class="plain-wrapper">
+                <p class="q">
+                Q2<br/>
+                眠れないで朝早く目覚めることがある
+                </p>
+            </div>
+
+            
+            <div class="input-container">
+                <div class="input-line"><div class="input-line-inner"></div></div>
+                <input type="radio" name="radio" id="input6"><label for="input6" class="crs-test"></label>
+                <input type="radio" name="radio" id="input7"><label for="input7" class="crs-test"></label>
+                <input type="radio" name="radio" id="input8" checked="checked"><label for="input8" class="crs-test"></label>
+                <input type="radio" name="radio" id="input9"><label for="input9" class="crs-test"></label>
+                <input type="radio" name="radio" id="input10"><label for="input10" class="crs-test"></label>
+            </div>
+            <div class="input-container">
+                <p class="input-caption">YES</p>
+                <p class="input-caption">NO</p>
+            </div>
+        </div>
+
+        <div class="next-button" id="q2">
+            <i></i>
+            <i></i>
+        </div>
     </div>
 
+    <!-- Q3 -->
+    <div id="#test3" class="q3">
+        <div class="plain-container" style="padding-top: 220px;">
+            <div class="plain-wrapper">
+                <p class="q">
+                Q3<br/>
+                人と話をしても楽しくない
+                </p>
+            </div>
+
+            
+            <div class="input-container">
+                <div class="input-line"><div class="input-line-inner"></div></div>
+                <input type="radio" name="radio" id="input11"><label for="input11" class="crs-test"></label>
+                <input type="radio" name="radio" id="input12"><label for="input12" class="crs-test"></label>
+                <input type="radio" name="radio" id="input13" checked="checked"><label for="input13" class="crs-test"></label>
+                <input type="radio" name="radio" id="input14"><label for="input14" class="crs-test"></label>
+                <input type="radio" name="radio" id="input15"><label for="input15" class="crs-test"></label>
+            </div>
+            <div class="input-container">
+                <p class="input-caption">YES</p>
+                <p class="input-caption">NO</p>
+            </div>
+        </div>
+
+        <div class="next-button" id="q3">
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q4">
+        <div class="plain-container" style="padding-top: 220px;">
+            <div class="plain-wrapper">
+                <p class="q">
+                Q4<br/>
+                自分の人生がつまらなく感じる
+                </p>
+            </div>
+
+            
+            <div class="input-container">
+                <div class="input-line"><div class="input-line-inner"></div></div>
+                <input type="radio" name="radio" id="input16"><label for="input16" class="crs-test"></label>
+                <input type="radio" name="radio" id="input17"><label for="input17" class="crs-test"></label>
+                <input type="radio" name="radio" id="input18" checked="checked"><label for="input18" class="crs-test"></label>
+                <input type="radio" name="radio" id="input19"><label for="input19" class="crs-test"></label>
+                <input type="radio" name="radio" id="input20"><label for="input20" class="crs-test"></label>
+            </div>
+            <div class="input-container">
+                <p class="input-caption">YES</p>
+                <p class="input-caption">NO</p>
+            </div>
+        </div>
+
+        <div class="next-button" id="q4">
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div id="#test5" class="q5">
+        <div class="plain-container" style="padding-top: 220px;">
+            <div class="plain-wrapper">
+                <p class="q">
+                Q5<br/>
+                自分が生きていることを申し訳ないと感じる
+                </p>
+            </div>
+
+            
+            <div class="input-container">
+                <div class="input-line"><div class="input-line-inner"></div></div>
+                <input type="radio" name="radio" id="input21"><label for="input21" class="crs-test"></label>
+                <input type="radio" name="radio" id="input22"><label for="input22" class="crs-test"></label>
+                <input type="radio" name="radio" id="input23" checked="checked"><label for="input23" class="crs-test"></label>
+                <input type="radio" name="radio" id="input24"><label for="input24" class="crs-test"></label>
+                <input type="radio" name="radio" id="input25"><label for="input25" class="crs-test"></label>
+            </div>
+            <div class="input-container">
+                <p class="input-caption">YES</p>
+                <p class="input-caption">NO</p>
+            </div>
+        </div>
+
+        <div class="next-button" id="q5">
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <!-- 結果を見る -->
+    <div class="result">
+            <div class="purple-button" id="foryou"><div class="letus">結果を見る</div></div>
+    </div>
+
+    <!-- そんな貴方には -->
+    <div class="anata">
+        <a href="./index.html#select-plan">
+            <div class="purple-button" id="tensei"><div class="letus">Let's 転生！</div></div>
+        </a>
+    </div>
 
     <!-- Scriptここから -->
     <script type="text/javascript" src="./scripts/nav.js"></script>
+    <script type="text/javascript" src="./scripts/dennou-test.js"></script>
+
 </body>

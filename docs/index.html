@@ -13,12 +13,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/yt-test.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        // サイト全体フェードイン
-        setTimeout (function () {
-            $("body").hide().delay(500).fadeIn(8500);
-        }, 000);    
-    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,9 +29,17 @@
 
     <meta property="og:description"
         content="">
+
+    <script type="text/javascript">
+        // サイト全体フェードイン
+        setTimeout (function () {
+            $(".fade").delay(500).fadeOut(5000);
+        }, 000);    
+    </script>
 </head>
 
 <body>
+<div class="fade"></div>
     <!-- ナビここから -->
         <div class="hamburger-button">
                 <i></i>
@@ -399,7 +401,7 @@
     <!-- footer ここまで -->
 
     <!-- Scriptここから -->
-    <script type="text/javascript" src="./scripts/yt-test.js"></script>
+    <!-- <script type="text/javascript" src="./scripts/yt-test.js"></script> -->
     <script type="text/javascript" src="./scripts/nav.js"></script>
 
 </body>
