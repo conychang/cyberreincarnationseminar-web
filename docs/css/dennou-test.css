@@ -24,6 +24,9 @@
 .next-button i:nth-child(2) {
     transform: translateX(15px) translateY(10px) rotate(45deg);
 }
+.next-button:hover {
+    cursor: pointer;
+}
 
 
 .input-line {
@@ -50,7 +53,7 @@
     -webkit-justify-content: space-between; /* Safari */
     justify-content:         space-between;
     z-index: 2;
-    background: crimson;
+    /* background: crimson; */
 
     align-items: align-self;
     align-items: center;
@@ -264,4 +267,8 @@ input[type="radio"]:checked + .crs-test::before {
     font-size: 20px;
     font-family: 'Noto Sans JP', serif;
     color: #fff;
+}
+
+.purple-button:hover {
+    cursor: pointer;
 }
