@@ -8,10 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common-style.css">
-    <link rel="stylesheet" href="css/smartphone.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/yt-test.css">
+    <link rel="stylesheet" href="css/common-style.css?=version20210523">
+    <link rel="stylesheet" href="css/smartphone.css?=version20210523">
+    <link rel="stylesheet" href="css/responsive.css?=version20210523">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- Google Fonts -->
@@ -77,11 +76,9 @@
 
     <!-- TOP -->
 
-    <div id="youtube-mask"></div>
+    <!-- <div id="youtube-mask"></div> -->
     <div id="top">
         <video autoplay muted loop playsinline preload="auto" control controlsList="nodownload" oncontextmenu="return false;" src="./images/web-op-dark.mp4"></video>
-        
-
         <div class="image-container">
             <img src="./images/logos/logo4web.png"></img>
         </div>
@@ -184,6 +181,19 @@
 
     <!-- 電脳転生診断リンク ここまで -->
 
+    <!-- ボタン消失点タグ -->
+    <div id="vanish" style="padding-bottom: 5px; background-color: #fff;"></div>
+
+    <!-- プランの選択 -->
+    <div class="plain-container" id="select-plan">
+        <div class="plain-wrapper">
+            <div class="h1">選べる2つのプラン</div>
+            <a href="./01-premium.html"><img class="crs-image" src="./images/lesson/lesson2.jpg"></a>
+            <a href="./02-perfect.html"><img class="crs-image" src="./images/lesson/lesson3.jpg"></a>
+        </div>
+    </div>
+    <!-- プランの選択　ここまで -->
+
     <!-- ご注文後のながれ -->
     <script type="text/javascript">
         $(function () {
@@ -263,19 +273,6 @@
         </div>
     </div>
     <!-- ご注文後のながれ　ここまで -->
-
-    <!-- ボタン消失点タグ -->
-    <div id="vanish" style="padding-bottom: 5px; background-color: #fff;"></div>
-
-    <!-- プランの選択 -->
-    <div class="plain-container" id="select-plan">
-        <div class="plain-wrapper">
-            <div class="h1">選べる2つのプラン</div>
-            <a href="#top"><img class="crs-image" src="./images/lesson/lesson2.jpg"></a>
-            <a href="#top"><img class="crs-image" src="./images/lesson/lesson3.jpg"></a>
-        </div>
-    </div>
-    <!-- プランの選択　ここまで -->
 
 
     <!-- FAQ -->

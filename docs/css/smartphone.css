@@ -2,12 +2,12 @@ div#top {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; */
     z-index: 100;
 }
 
@@ -18,15 +18,6 @@ video {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
-
-.dot-layer {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.4;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC
-    ) repeat;
 }
 
 .hamburger-button {
