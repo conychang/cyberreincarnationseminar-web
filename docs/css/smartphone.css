@@ -458,22 +458,22 @@ div.flow-parent-container:hover {
     height: 56px;
 }
 
-.p1 span {
+.p1 .span-a {
     font-size: 30px;
     font-style: italic;
     background:linear-gradient(transparent 70%, #6666ff 0%);
     padding: 0px 10px;
 }
 
-.p1 .span-a {
+.p1 .span-b {
     font-size: 22px;
-    background:none;
+    background:linear-gradient(transparent 50%, #666 0%);
     font-style: normal;
 }
 
-.p1 .span-b {
+.p1 .span-c {
     font-size: 18px;
     background:none;
     font-style: italic;
-    padding: 0px 5px;
+    padding: 0px 4px;
 }
