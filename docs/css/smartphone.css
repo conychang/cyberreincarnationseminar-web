@@ -6,8 +6,8 @@ div#top {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: center;
-    overflow: hidden; */
+    align-items: center; */
+    overflow: hidden;
     z-index: 100;
 }
 
