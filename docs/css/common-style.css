@@ -160,3 +160,7 @@ li {
   margin-bottom: 50px;
 }
 
+.plain-wrapper-100 img {
+  width: 100%;
+  height: auto;
+}
