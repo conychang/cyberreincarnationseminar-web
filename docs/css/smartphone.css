@@ -452,13 +452,28 @@ div.flow-parent-container:hover {
 }
 
 
-.h1-container {
-    /* height: 28px; */
-    /* background: crimson; */
-    margin: 0;
-}
-.h1 img {
+.p1 img {
     position: relative;
-    top: 17px;
+    top: 18px;
     height: 56px;
+}
+
+.p1 span {
+    font-size: 30px;
+    font-style: italic;
+    background:linear-gradient(transparent 70%, #6666ff 0%);
+    padding: 0px 10px;
+}
+
+.p1 .span-a {
+    font-size: 22px;
+    background:none;
+    font-style: normal;
+}
+
+.p1 .span-b {
+    font-size: 18px;
+    background:none;
+    font-style: italic;
+    padding: 0px 5px;
 }
