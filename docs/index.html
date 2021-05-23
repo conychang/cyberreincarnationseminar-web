@@ -29,16 +29,51 @@
     <meta property="og:description"
         content="">
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // サイト全体フェードイン
         setTimeout (function () {
             $(".fade").delay(500).fadeOut(5000);
         }, 000);    
+    </script> -->
+
+    <script>
+        $(function() {
+        var h = $(window).height();
+        
+        $('#wrap').css('display','none');
+        $('#loader-bg, #loader').height(h).css('display','flex');
+        });
+        
+        $(window).load(function () { //全ての読み込みが完了したら実行
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
+        $('#wrap').css('display', 'block');
+        });
+        
+        //10秒たったら強制的にロード画面を非表示
+        $(function(){
+        setTimeout('stopload()',10000);
+        });
+        
+        function stopload(){
+        $('#wrap').css('display','block');
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
+        }
     </script>
 </head>
 
 <body>
-<div class="fade"></div>
+<div id="loader-bg">
+    <div id="loader">
+        <!-- <img src="img-loading.gif" width="80" height="80" alt="Loading..." /> -->
+        <img src="./images/loading.png">
+        <p>Loading...</p>
+    </div>
+</div>
+
+<div id="wrap">
+<!-- <div class="fade"></div> -->
     <!-- ナビここから -->
         <div class="hamburger-button">
                 <i></i>
@@ -381,6 +416,7 @@
     </div>
     <!-- footer ここまで -->
 
+</div>
     <!-- Scriptここから -->
     <!-- <script type="text/javascript" src="./scripts/yt-test.js"></script> -->
     <script type="text/javascript" src="./scripts/nav.js"></script>

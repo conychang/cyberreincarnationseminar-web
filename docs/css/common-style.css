@@ -45,6 +45,43 @@ body {
   background: #fff;
 }
 
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 10000;
+}
+#loader {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  z-index: 10001;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#loader img {
+  width: 100px;
+  height: auto;
+  animation: rotate-anime 3s ease-in-out infinite;
+}
+#loader p {
+  font-size: 12px;
+  animation: flash 1.5s linear infinite;
+}
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
 
 p {
   font-family: 'Noto Sans JP', sans-serif;
