@@ -57,17 +57,3 @@ __▒▒▒▒▒
     }
 }
 
-/* @media screen and (orientation:landscape) and (max-width: 900px) {
-    .nav-menu-ul {
-        display: flexbox;
-        list-style-type: none;
-        margin: 0 0 0 1em;
-        padding: 0;
-    }
-    .nav-menu-li {
-        font-size: 21px;
-        margin-bottom: 10px;
-    }
-
-} */
-
