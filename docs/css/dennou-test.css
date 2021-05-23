@@ -228,8 +228,8 @@ input[type="radio"]:checked + .crs-test::before {
     height:100vh;
     background-repeat:no-repeat;
     background-position: center;
-    background-image: url(../images/anata.jpg);
-    background-size: cover;
+    background-image: url(../images/crs-test/shindanresult-text.png), url(../images/crs-test/shindanresult-back.jpg);
+    background-size: 80%, cover;
     z-index: 700;
 
     display: flex;
@@ -271,4 +271,13 @@ input[type="radio"]:checked + .crs-test::before {
 
 .purple-button:hover {
     cursor: pointer;
+}
+
+.pcrstest {
+    font-size: 20px;
+    position: absolute; 
+    top:0; 
+    color: #fff; 
+    margin-top: 15vh; 
+    margin-bottom: 0; 
 }

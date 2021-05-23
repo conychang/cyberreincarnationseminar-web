@@ -48,6 +48,7 @@ $('#q5').on('click', function () {
 $('#foryou').on('click', function () {
     $('.purple-button').fadeOut(2000);
     setTimeout (function () {
+        $(".pcrstest").hide().delay(3000).fadeIn(1000);
         $("#tensei").hide().delay(5000).fadeIn(100);
     }, 000);   
     $('.anata').slideDown(5000);
