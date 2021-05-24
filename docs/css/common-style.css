@@ -201,3 +201,7 @@ li {
   width: 100%;
   height: auto;
 }
+
+p span {
+  background:linear-gradient(transparent 70%, #6666ff 0%);
+}
